@@ -1,0 +1,874 @@
+{
+	"info": {
+		"_postman_id": "f3c79dab-3aa1-4abf-ba72-fd712112bd83",
+		"name": "book_storm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8888/book_storm/project/input_data.php",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/input_data.php",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"input_data.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_store_open_list_for_date_time.php?_date_time=2020/9/4 11:15:00",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_store_open_list_for_date_time.php?_date_time=2020/9/4 11:15:00",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_store_open_list_for_date_time.php"
+					],
+					"query": [
+						{
+							"key": "_date_time",
+							"value": "2020/9/4 11:15:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_store_open_list_for_week.php?_week=1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_store_open_list_for_week.php?_week=1",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_store_open_list_for_week.php"
+					],
+					"query": [
+						{
+							"key": "_week",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_store_open_list_for_hour.php?_mode=W&_hour=1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_store_open_list_for_hour.php?_mode=D&_hour=1",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_store_open_list_for_hour.php"
+					],
+					"query": [
+						{
+							"key": "_mode",
+							"value": "W",
+							"disabled": true
+						},
+						{
+							"key": "_mode",
+							"value": "D"
+						},
+						{
+							"key": "_hour",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_book_list_for_price.php?_min=8&_max=10",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_book_list_for_price.php?_min=8&_max=10",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_book_list_for_price.php"
+					],
+					"query": [
+						{
+							"key": "_min",
+							"value": "8"
+						},
+						{
+							"key": "_max",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_store_list_for_book_quantity.php?_min=10&_max=12",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_store_list_for_book_quantity.php?_min=10&_max=12",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_store_list_for_book_quantity.php"
+					],
+					"query": [
+						{
+							"key": "_min",
+							"value": "10"
+						},
+						{
+							"key": "_max",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_store_list_for_book_price.php?_min_quantity=10&_max_quantity=12&_min_price=11&_max_price=13",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_store_list_for_book_price.php?_min_quantity=10&_max_quantity=12&_min_price=11&_max_price=13",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_store_list_for_book_price.php"
+					],
+					"query": [
+						{
+							"key": "_min_quantity",
+							"value": "10"
+						},
+						{
+							"key": "_max_quantity",
+							"value": "12"
+						},
+						{
+							"key": "_min_price",
+							"value": "11"
+						},
+						{
+							"key": "_max_price",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_book_list_for_keyword.php?_keyword=Ruby",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_book_list_for_keyword.php?_keyword=Ruby",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_book_list_for_keyword.php"
+					],
+					"query": [
+						{
+							"key": "_keyword",
+							"value": "Ruby"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_user_list_for_date_time_sum.php?_str_date=2019-01-01&_end_date=2019-12-31&_rank=5",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_user_list_for_date_time_sum.php?_str_date=2019-01-01&_end_date=2019-12-31&_rank=5",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_user_list_for_date_time_sum.php"
+					],
+					"query": [
+						{
+							"key": "_str_date",
+							"value": "2019-01-01"
+						},
+						{
+							"key": "_end_date",
+							"value": "2019-12-31"
+						},
+						{
+							"key": "_rank",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_quantity_sum_for_date.php?_str_date=2019-01-01&_end_date=2019-12-31",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_quantity_sum_for_date.php?_str_date=2019-01-01&_end_date=2019-12-31",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_quantity_sum_for_date.php"
+					],
+					"query": [
+						{
+							"key": "_str_date",
+							"value": "2019-01-01"
+						},
+						{
+							"key": "_end_date",
+							"value": "2019-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/edit_user.php",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "_name",
+							"value": "Edith Johnson",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/edit_user.php",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"edit_user.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/edit_book.php",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "_name",
+							"value": "Ruby: The Autobiography",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/edit_book.php",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"edit_book.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/edit_store.php",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "_name",
+							"value": "Look Inna Book",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/edit_store.php",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"edit_store.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_store_list_for_rank.php?_mode=Q",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_store_list_for_rank.php?_mode=S",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_store_list_for_rank.php"
+					],
+					"query": [
+						{
+							"key": "_mode",
+							"value": "S"
+						},
+						{
+							"key": "_mode",
+							"value": "Q",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_user_quantity.php?_str_date=2019-01-01&_end_date=2019-12-31&_min_price=10&_max_price=12",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_user_quantity.php?_str_date=2019-01-01&_end_date=2019-12-31&_min_price=10&_max_price=12",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_user_quantity.php"
+					],
+					"query": [
+						{
+							"key": "_str_date",
+							"value": "2019-01-01"
+						},
+						{
+							"key": "_end_date",
+							"value": "2019-12-31"
+						},
+						{
+							"key": "_min_price",
+							"value": "10"
+						},
+						{
+							"key": "_max_price",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_history.php?_id=0",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_history.php?_id=0",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_history.php"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/get_book_list.php",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/get_book_list.php",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"get_book_list.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/book_storm/project/buy_book.php",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "book_storm_password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "book_storm_username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_book",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "_user",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://iantubookstorm.000webhostapp.com/book_storm/buy_book.php",
+					"protocol": "https",
+					"host": [
+						"iantubookstorm",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"book_storm",
+						"buy_book.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1cddfe9b-2977-44b7-9d61-8c2b94f8df92",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d3593d19-b510-4762-be00-4ce2f5736e1d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
