@@ -1,0 +1,47 @@
+{
+  "name": "book_storm",
+  "version": "0.1.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node app.js",
+    "mirgrate": "node mirgrate.js",
+    "lint": "eslint",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://warbobobo@bitbucket.org/warbobobo/restapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/warbobobo/restapi#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.8.0",
+    "node-rake": "^1.0.1",
+    "semantic-release-cli": "^5.2.3"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "github:semantic-release/npm",
+    "@shelf/jest-mongodb": "^1.1.3",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "jest-extended": "^0.11.2",
+    "mongodb": "^3.1.13",
+    "nock": "^11.7.0",
+    "semantic-release": "^17.0.4",
+    "supertest": "^4.0.2"
+  }
+}

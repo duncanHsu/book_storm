@@ -1,0 +1,42 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+    - "27017:27017"
+    container_name: mymongo
+    environment:
+      DB_NAME: book_storm
+      DB_USERNAME: admin
+      DB_PASSWARD: admin
+    # volumes: 
+    #   - ./db:/db-data
+    entrypoint: [ "mongod", "--bind_ip_all", "--replSet", "rs0" ]
+    logging:
+      driver: "json-file"
+      options:
+          max-size: "3m"
+          max-file: "5"
+  store:
+    image: book_store
+    restart: always
+    ports:
+    - "3000:3000"
+    environment:
+      PORT: 3000
+      DB_HOST: mymongo
+      DB_PORT: 27017
+      DB_NAME: book_storm
+      DB_USERNAME: admin
+      DB_PASSWARD: admin
+    logging:
+      driver: "json-file"
+      options:
+          max-size: "1m"
+          max-file: "2"
+  creator:
+    build: creator
+    entrypoint: ["mongo","--host","mongo","--port","27017","--eval", 'rs.initiate( { _id : "rs0",members: [{ _id: 0, host: "mongo:27017" } ]})']
+    depends_on:
+      - mongo
