@@ -64,6 +64,7 @@ class App {
     }
 
     private initRoutes(): void {
+        this.app.get("/", this.userController.home);
         this.app.get("/api/", this.userController.root);
 
         this.app.post("/api/store/open/datetime", this.storeController.openByDatetime);

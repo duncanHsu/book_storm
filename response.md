@@ -4,7 +4,8 @@
 
 ## API Document (required)
 Import [this](https://raw.githubusercontent.com/duncanHsu/book_storm/master/BookStorm.postman_collection.json) json file to Postman
-Add global environment
+
+Add global environment to Postman
 ```
 VARIABLE = BOOKSTORM_DOMAIN
 VALUE = http://18.163.129.189:3001
