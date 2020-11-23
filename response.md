@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/badge/npm-v6.14.8-blue)](https://nodejs.org/zh-tw/download/) [![nodejs](https://img.shields.io/badge/node-v14.15.1-brightgreen)](https://nodejs.org/zh-tw/download/)
 
 ## API Document (required)
-Import [this](https://github.com/duncanHsu/book_storm/BookStorm.postman_collection.json) json file to Postman
+Import [this](https://raw.githubusercontent.com/duncanHsu/book_storm/master/BookStorm.postman_collection.json) json file to Postman
 Add global environment
 ```
 VARIABLE = BOOKSTORM_DOMAIN
