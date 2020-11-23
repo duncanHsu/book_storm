@@ -1,0 +1,22 @@
+{
+    "development": {
+        "database": {
+            "host": "chargeon.cnb4ovy9nz9g.ap-east-1.rds.amazonaws.com",
+            "port": 5432,
+            "name": "test",
+            "username": "postgres",
+            "password": "chargeon",
+            "dialect": "postgres"
+        }
+    },
+    "production": {
+        "database": {
+            "host": "chargeon.cnb4ovy9nz9g.ap-east-1.rds.amazonaws.com",
+            "port": 5432,
+            "name": "test",
+            "username": "postgres",
+            "password": "chargeon",
+            "dialect": "postgres"
+        }
+    }
+  }

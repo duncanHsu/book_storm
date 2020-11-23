@@ -1,0 +1,39 @@
+{
+  "name": "book_storm",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --exec DEBUG=example:* ts-node ./src/server.ts",
+    "start": "node ./dist/server.js",
+    "prod": "npm run build && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "duncan hsu",
+  "license": "MIT",
+  "dependencies": {
+    "@types/connect-flash": "0.0.34",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express": "^4.16.0",
+    "@types/express-session": "^1.15.11",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.9.4",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "^4.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.4",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.5",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3",
+    "wink-bm25-text-search": "^3.0.1"
+  }
+}

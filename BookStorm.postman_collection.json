@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "8d549357-5f7b-49ba-85b1-f6d575e9727b",
+		"name": "BookStorm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/store/open/datetime",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"datetime\": \"2020-11-23T07:31:19.968Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/store/open/datetime",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"store",
+						"open",
+						"datetime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/store/open/dayOfWeek",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"time\": \"1970-01-01T07:31:00.000Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/store/open/dayOfWeek",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"store",
+						"open",
+						"dayOfWeek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/store/open/hours",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dayOrWeek\": \"week\", \"moreOrLess\": \"more1\", \"hours\": 80}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/store/open/hours",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"store",
+						"open",
+						"hours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/book/priceRange",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"priceRange\": [8, 10], \"sortBy\": \"alphabetically\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/book/priceRange",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"book",
+						"priceRange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/store/books/numberOfBooks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"moreOrLess\": \"more\", \"value\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/store/books/numberOfBooks",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"store",
+						"books",
+						"numberOfBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/store/numberOfBooksWithinPriceRange",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"priceRange\": [8, 10], \"moreOrLess\": \"more\", \"value\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/store/numberOfBooksWithinPriceRange",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"store",
+						"numberOfBooksWithinPriceRange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/store/books/search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"target\": \"store\", \"keyword\": \"book\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/store/books/search",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"store",
+						"books",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/top/totalNumberDollarOfTransactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"top\": 5, \"dateRange\": [\"02/01/2020 04:09 AM\", \"04/01/2020 04:09 AM\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/user/top/totalNumberDollarOfTransactions",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"top",
+						"totalNumberDollarOfTransactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/transaction/total",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dateRange\": [\"02/01/2020 04:09 AM\", \"04/01/2020 04:09 AM\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/user/transaction/total",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"transaction",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/edit/store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 1, \"new_name\": \"Look Inna Book1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/user/edit/store",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"edit",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/edit/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 1, \"new_name\": \"Ruby: The Autobiography\", \"new_price\": 13.88}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/user/edit/book",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"edit",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/edit/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 1, \"new_name\": \"Edward Gonzalez\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/user/edit/user",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"edit",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/store/popular",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"by\": \"dollar\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/store/popular",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"store",
+						"popular"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/transaction/numberOfUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dateRange\": [\"02/01/2020 04:09 AM\", \"04/01/2020 04:09 AM\"], \"aboveOrBelow\": \"below\", \"value\": 3}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/user/transaction/numberOfUsers",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"transaction",
+						"numberOfUsers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

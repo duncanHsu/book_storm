@@ -1,0 +1,24 @@
+{
+    "family": "test",
+    "containerDefinitions": [
+        {
+            "name": "test",
+            "memory": null,
+            "memoryReservation": 256,
+            "cpu": null,
+            "portMappings": [
+                {
+                  "hostPort": 3001,
+                  "protocol": "tcp",
+                  "containerPort": 3001
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "networkMode": "bridge",
+    "memory":  null,
+    "cpu": null
+}
