@@ -13,42 +13,154 @@ VALUE = http://18.163.129.189:3001
 ## Task
 + List all book stores that are open at a certain datetime
 
-  `/api/store/open/datetime`
+| Method | URL |
+| --- | --- |
+| POST | /api/store/open/datetime |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| time | string | ISO format string |
+
 + List all book stores that are open on a day of the week, at a certain time
 
-  `/api/store/open/dayOfWeek`
+| Method | URL |
+| --- | --- |
+| POST | /api/store/open/dayOfWeek |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| time | string | ISO format string |
+
 + List all book stores that are open for more or less than x hours per day or week
 
-  `/api/store/open/hours`
+| Method | URL |
+| --- | --- |
+| POST | /api/store/open/hours |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| dayOrWeek | string | day or week |
+| moreOrLess | string | more or less |
+| hours | number | bookstores open hours |
+
 + List all books that are within a price range, sorted by price or alphabetically
 
-  `/api/book/priceRange`
+| Method | URL |
+| --- | --- |
+| POST | /api/book/priceRange |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| priceRange | number[] | price range |
+| sortBy | string | price or alphabetically |
+
 + List all book stores that have more or less than x number of books
 
-  `/api/store/numberOfBooks`
+| Method | URL |
+| --- | --- |
+| POST | /api/store/numberOfBooks |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| moreOrLess | string | more or less |
+| value | number | number of books |
+
 + List all book stores that have more or less than x number of books within a price range
 
-  `/api/store/numberOfBooksWithinPriceRange`
+| Method | URL |
+| --- | --- |
+| POST | /api/store/numberOfBooksWithinPriceRange |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| priceRange | number[] | price range |
+| moreOrLess | string | more or less |
+| value | number | number of books |
+
 + Search for book stores or books by name, ranked by relevance to search term
 
-  `/api/store/books/search`
+| Method | URL |
+| --- | --- |
+| POST | /api/store/books/search |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| target | string | store or book |
+| keyword | string | search keyword |
+
 + The top x users by total transaction amount within a date range
 
-  `/api/user/top/totalNumberDollarOfTransactions`
+| Method | URL |
+| --- | --- |
+| POST | /api/user/top/totalNumberDollarOfTransactions |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| top | number | number of users |
+| dateRange | string[] | date range |
+  ``
 + The total number and dollar value of transactions that happened within a date range
 
-  `/api/user/transaction/total`
+| Method | URL |
+| --- | --- |
+| POST | /api/user/transaction/total |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| dateRange | string[] | date range |
+
 + Edit book store name, book name, book price and user name
 
-  `/api/user/edit/store`
-  `/api/user/edit/book`
-  `/api/user/edit/user`
+| Method | URL |
+| --- | --- |
+| POST | /api/user/edit/store |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| id | number | store id |
+| new_name | string | new store name |
+---
+| Method | URL |
+| --- | --- |
+| POST | /api/user/edit/book |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| id | number | store id |
+| new_name | string | new book name |
+| new_price | number | new book price |
+---
+| Method | URL |
+| --- | --- |
+| POST | /api/user/edit/user |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| id | number | user id |
+| new_name | string | new user name |
+
 + The most popular book stores by transaction volume, either by number of transactions or transaction dollar value
 
-  `/api/store/popular`
+| Method | URL |
+| --- | --- |
+| POST | /api/store/popular |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| by | string | number or dollar |
+
 + Total number of users who made transactions above or below $v within a date range
 
-  `/api/user/transaction/numberOfUsers`
+| Method | URL |
+| --- | --- |
+| POST | /api/user/transaction/numberOfUsers |
+
+| Param | Type | Description |
+| --- | --- | --- |
+| dateRange | string[] | date range |
+| aboveOrBelow | string | below or below |
+| value | number | number of users |
+
 + Process a user purchasing a book from a book store, handling all relevant data changes in an atomic transaction
 
 ## Import Data Commands (required)
