@@ -26,6 +26,14 @@ export class BookRepository {
         });
     }
 
+    public findByName(name: string): Promise<BookModel> {
+        return BookModel.findOne<BookModel>({
+            where: {
+                name: name
+            }
+        });
+    }
+
     public findByPrice(priceRange: number[], sortBy: 'price' | 'alphabetically'): Promise<BookModel[]> {
         const order = (sortBy == 'alphabetically' ? 'name' : sortBy);
         return BookModel.findAll({

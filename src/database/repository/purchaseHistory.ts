@@ -18,6 +18,10 @@ export class PurchaseHistoryRepository {
         PurchaseHistoryModel.belongsTo(UserModel, { foreignKey: 'userId', targetKey: 'id', as: 'user' });
     }
 
+    public create(storeName: string, bookName: string, transactionAmount: number, transactionDate: Date): Promise<PurchaseHistoryModel> {
+        return PurchaseHistoryModel.create({storeName: storeName, bookName: bookName, transactionAmount: transactionAmount, transactionDate});
+    }
+
     public findById(id: number): Promise<PurchaseHistoryModel> {
         return PurchaseHistoryModel.findOne<PurchaseHistoryModel>({
             where: {

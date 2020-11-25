@@ -76,6 +76,7 @@ class App {
         this.app.post("/api/store/popular", this.storeController.popular);
 
         this.app.post("/api/book/priceRange", this.bookController.priceRange);
+        this.app.post("/api/book/purchase", this.bookController.purchase);
         
         this.app.post("/api/user/top/totalNumberDollarOfTransactions", this.userController.totalNumberDollarOfTransactions);
         this.app.post("/api/user/transaction/total", this.userController.transactionTotal);
@@ -83,7 +84,7 @@ class App {
         this.app.post("/api/user/edit/book", this.bookController.edit);
         this.app.post("/api/user/edit/user", this.userController.edit);
         this.app.post("/api/user/transaction/numberOfUsers", this.userController.transactionNumberOfUsers);
-
+        
 
     }
 

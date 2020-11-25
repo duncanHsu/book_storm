@@ -437,6 +437,34 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "/api/book/purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\": 0, \"store\": \"Look Inna Book\", \"book\": \"Sandy Ruby\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BOOKSTORM_DOMAIN}}/api/book/purchase",
+					"host": [
+						"{{BOOKSTORM_DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"book",
+						"purchase"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
